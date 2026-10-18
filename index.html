@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Untuk Teman-Temanku Tersayang</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="intro" id="introText">
+    Ini Pesanku Untuk Teman-Temanku Tersayang,
+    Semoga Kalian Baik-Baik Saja.
+  </div>
+
+  <button class="btn" id="readButton" onclick="showLetter()">
+    Read it ♡
+  </button>
+
+  <div class="letter" id="letterBox">
+
+    <!-- SLIDE 1: SURAT -->
+    <section class="slide active" id="slide1">
+      <h2>Untuk Teman-Temanku ♡</h2>
+      <p id="typedText"></p>
+
+      <div class="slide-nav">
+        <button class="nav-btn" onclick="changeSlide(2)">
+          Next → Kenangan
+        </button>
+      </div>
+    </section>
+
+    <!-- SLIDE 2: VIDEO PERTAMA -->
+    <section class="slide" id="slide2">
+      <h2>Sedikit Kenangan Kita ♡</h2>
+      <h3>Kenangan Pertama 🎬</h3>
+
+      <video controls preload="metadata" playsinline>
+        <source src="kenangan1.mp4.mp4" type="video/mp4" />
+        Browser kamu tidak mendukung video.
+      </video>
+
+      <p>Momen yang bakal selalu gue inget.</p>
+
+      <div class="slide-nav">
+        <button class="nav-btn secondary"
+          onclick="changeSlide(1)">← Surat</button>
+        <button class="nav-btn"
+          onclick="changeSlide(3)">Next →</button>
+      </div>
+    </section>
+
+    <!-- SLIDE 3: VIDEO KEDUA + TTD -->
+    <section class="slide" id="slide3">
+      <h2>Kenangan Kedua 💗</h2>
+
+      <video controls preload="metadata" playsinline>
+        <source src="kenangan2.mp4.mp4" type="video/mp4" />
+        Browser kamu tidak mendukung video.
+      </video>
+
+      <p>Semoga masih banyak cerita yang bisa kita buat bareng.</p>
+
+      <div class="signature-section">
+        <p>Salam hangat,</p>
+        <img
+          src="ttd.png.jpeg"
+          alt="Tanda tangan"
+          class="signature"
+        />
+        <p class="signature-name">Sahabat kalian ♡</p>
+      </div>
+
+      <div class="slide-nav">
+        <button class="nav-btn secondary"
+          onclick="changeSlide(2)">← Sebelumnya</button>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
